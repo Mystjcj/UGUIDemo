@@ -95,9 +95,8 @@ public class CircleImage : Image
         Vector2 centerVertexPos = new Vector2((0.5f - rectTransform.pivot.x) * width, (0.5f - rectTransform.pivot.y) * height);
         Color32 colorTemp = GetOriginColor();
 
-        UIVertex cneterVertex = GetUIVertex(centerVertexPos, uvCenter, colorTemp);
-        vh.AddVert(cneterVertex);
-
+        UIVertex centerVertex = GetUIVertex(centerVertexPos, uvCenter, colorTemp);
+        vh.AddVert(centerVertex);
         int vertexCount = realSegments + 1;
         float curRadian = 0;
         Vector2 posTemp = Vector2.zero;
